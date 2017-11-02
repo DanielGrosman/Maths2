@@ -11,6 +11,7 @@
 
 @interface QuestionFactory : NSObject
 
+// defines a method of the class Question (need to import the question class)
 - (Question *) generateRandomQuestion;
 
 @end

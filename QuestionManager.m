@@ -20,8 +20,9 @@
 }
 
 - (NSString *) timeOutput:(NSMutableArray*) questions {
-    
+    // sets the time to 0 to begin with
     NSTimeInterval totalTime = 0;
+    // for every question that gets added to the srray, add the answerTime of that question to the totalTime
     for (Question* question in questions) {
         totalTime += question.answerTime;
     }

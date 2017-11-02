@@ -24,10 +24,11 @@ int main(int argc, const char * argv[]) {
         QuestionFactory *questionFactory = [[QuestionFactory alloc] init];
         
         while(gameOn){
-            
+            // creates an instance of the Question class called question. It runs the method generateRandomQuestion from the questionfactory
             Question *question = [questionFactory generateRandomQuestion];
+            // adds the question to the the array questions in the questionManager
             [questionManager.questions addObject:question];
-            
+            // logs the question
             NSLog(@"\nWhat is the answer to: %@ \n", [question question]);
             
             
